@@ -7,8 +7,6 @@ Parameaters:
     Type:String
   Role:
     Type:String
-  TargetGroupArn:
-    Type:String
 
 Resources:
   Services:
