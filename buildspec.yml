@@ -17,9 +17,9 @@ phases:
       - echo Pushing the Docker image...
       - docker push $IMAGE_REPO_NAME:$IMAGE_TAG
       - printf '{"Image":"%s:%s"}' $IMAGE_REPO_NAME $IMAGE_TAG > build.json
-  artifacts:
-      files:
-        -build.json
-        -cfn/service.yml
-        -cfn/envi
-      discard-paths: yes
+artifacts:
+  files:
+    -build.json
+    -cfn/service.yml
+    -cfn/envi
+  discard-paths: yes
