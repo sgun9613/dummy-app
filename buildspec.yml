@@ -19,7 +19,7 @@ phases:
       - printf '{"Image":"%s:%s"}' $IMAGE_REPO_NAME $IMAGE_TAG > build.json
 artifacts:
   files:
-    -build.json
-    -cfn/service.yml
-    -cfn/envi
+    - build.json
+    - cfn/service.yml
+    - cfn/environments/production.json
   discard-paths: yes
